@@ -47,6 +47,7 @@ public class UseCase6PalindromeCheckerApp {
 
         boolean isPalindrome = true;
 
+        // Compare characters
         while (!queue.isEmpty()) {
             if (!queue.remove().equals(stack.pop())) {
                 isPalindrome = false;
@@ -54,6 +55,7 @@ public class UseCase6PalindromeCheckerApp {
             }
         }
 
+        // Display result
         if (isPalindrome) {
             System.out.println(input + " is a Palindrome.");
         } else {
